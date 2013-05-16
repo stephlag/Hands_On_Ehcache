@@ -3,6 +3,8 @@
          updateCheck="true"
          dynamicConfig="true"
          monitoring="on"
+         maxBytesLocalHeap="400M"
+         maxBytesLocalOffHeap="400M"
       name="arcManager">
 
   <managementRESTService enabled="true" bind="localhost:9888"/>
@@ -11,7 +13,9 @@
 
   <cache
          name="wine1"
-
+		maxBytesLocalHeap="200M"
+		maxBytesLocalOffHeap="200M"
+		
       >
   </cache>
 
@@ -23,7 +27,8 @@
 
   <cache
          name="wine3"
-
+		maxBytesLocalHeap="160M"
+		maxBytesLocalOffHeap="160M"
       >
   </cache>
 
